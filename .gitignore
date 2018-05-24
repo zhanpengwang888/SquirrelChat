@@ -1,0 +1,4 @@
+./key.pem
+./server/key.pem
+./server/logKey.txt
+./server/key.txt
