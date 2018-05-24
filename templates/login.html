@@ -1,0 +1,39 @@
+<!--
+  Created by Mark on 2018/4/22.
+  Inspired by this web page: https://blog.csdn.net/fifteen718/article/details/50836046 
+ -->
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<title>Squirrel chat room login</title>
+	<link type="text/css" rel="stylesheet" href="/CSS/login.css">
+	<!--<script type="text/javascript" src="/js/login.js"></script> -->
+</head>
+<body>
+	<div id="login_frame">  
+  		
+	    <p id="image_logo"><img src="/images/better_icon.png" alt="Sorry something is wrong:(" id="icon" width=160px height=100px></p>  
+	  
+	    <form method="post">  
+	  
+	        <p><label class="label_input">Username</label><input type="text" id="username" name="username" class="text_field"/></p>  
+	        <p><label class="label_input">Password</label><input type="password" id="password" name="password" class="text_field"/></p>  
+			{% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
+			<ul class=flashes>
+				{% for category, message in messages %}
+				<li class="{{ category }}">{{ message }}</li>
+				{% endfor %}
+			</ul>
+			{% endif %} {% endwith %}
+	        <div id="login_control">  
+	            <input type="submit" id="btn_login" value="Login"/>  
+	            <a id="forget_pwd" href="/create_account">Create Account</a>
+	            <!-- <a id="forget_pwd" href="/create_account">Create Account</a> -->
+	            <!-- <a id="change_pwd" href="change_pwd.html">Change password</a> -->
+	            <!-- you need to implement change_pwd -->
+	            <a id="change_pwd" href="/change_pwd">Change password</a>
+	        </div>  
+	    </form>  
+	</div> 
+
+</body>

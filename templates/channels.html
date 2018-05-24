@@ -1,0 +1,53 @@
+<!-- inspired by http://www.wangjie.org/css-code/detail-6231.aspx -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>channel lsit</title>
+  <link type="text/css" rel="stylesheet" href="../CSS/channels.css"> 
+  <!-- <script src="../js/jquery-1.4.2.min.js"></script> -->
+  <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script type="text/javascript" src="../js/channel_list.js"></script>
+  <script type="text/javascript">
+    window.onload = load_default;
+</script>
+</head>
+<body>
+  <div ng-app="" id="username" type="none">{{username}}</div>
+ <!-- <div ng-app="" id="channel_list">{{channel_list}}</div> -->
+  <div id="new_channel">  
+      <!-- <input type="button" id="btn_create_channel" value="Create Channel" onclick="new_channel();"/>   -->
+      <input type="button" id="btn_create_channel" value="Create Channel"/>
+      <a href="/logout"><input type="button" id="btn_logout" value="Logout"> </a>
+  </div>
+  <table id="mytable" cellspacing="0">     <th scope="col" class="head_no_change" abbr="Configurations">Channel name</th>
+    <th scope="col" class="head_no_change" abbr="Dual 1.8">channel topic</th>
+    <th scope="col" class="head_no_change" abbr="Dual 2">Administrator</th>
+  </tr>
+  {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
+  <ul class=flashes>
+    {% for category, message in messages %}
+    <li class="{{ category }}">{{ message }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %} {% endwith %}
+  <!--
+  <tr>
+    <th scope="row" abbr="Model" class="spec">www.865171.cn</th>
+    <td>www.865171.cn</td>
+    <td>www.865171.cn</td>
+  </tr>
+  <tr>
+    <th scope="row" abbr="G5 Processor" class="specalt">www.865171.cn</th>
+    <td class="alt">www.865171.cn</td>
+    <td class="alt">www.865171.cn</td>
+  </tr>
+  <tr>
+    <th scope="row" abbr="Frontside bus" class="spec">www.865171.cn</th>
+    <td>www.865171.cn</td>
+    <td>www.865171.cn</td>
+  </tr>
+  -->
+</table>
+</body>
+</html>

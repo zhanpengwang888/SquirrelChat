@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Squirrel chat room</title>
+<!-- <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script type="text/javascript" src="../js/chatroom.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript">
+</script>
+<link href="../CSS/chatroom.css" rel="stylesheet" media="screen" type="text/css"/>
+<style type="text/css">
+</style>
+</head>
+<body>
+
+<div id="username">{{username}}</div>
+<div id="admin">{{admin}}</div>
+<div id="users">{{users}}</div>
+<div id="files">{{files}}</div>
+<div id="channel_name">{{channel_name}}</div>
+<div id="channel_topic">{{channel_topic}}</div>
+
+<div id="mid_top">
+  <!--  <div class="list">
+  <table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td class="td_user td_user_click">
+      老猪
+    </td>
+    <td class="td_hide td_hide_click">
+      X
+    </td>
+  </tr>
+  </table>
+</div>
+-->
+</div>
+<div id="top">
+head
+</div>
+<div id="body">
+<div id="left">
+  <div class="box">
+    <h3 class="h3 h3_1">Files(<span class="n_geshu_1"></span>)</h3>
+    <ul class="ul ul_1">
+      <li>file_something</li>
+    </ul>
+    <h3 class="h3 h3_2">Users(<span class="n_geshu_2"></span>)</h3>
+    <ul class="ul ul_2">
+      <li>kaka</li>
+    </ul>
+  </div>
+  <div class="box_f">
+  </div>
+</div>
+<div id="right">
+  <div class="right_box">
+    <div id="right_top">
+      <!-- <input type="button" value="change topic"></div> -->
+      <!-- <input type="button" value="upload file"></div> -->
+      <!--<p><img src="images/head.jpg" alt="头象"/>
+    </p>
+        老猪-->
+  </div>
+  <div id="right_mid">
+  </div>
+  <div id="right_foot">
+    something
+  </div>
+  <div class="blank">
+  </div>
+</div>
+<div class="right_box_foot">
+</div>
+</div>
+<div id="mid">
+<div id="mid_con">
+  <div class="my_show">
+    <div class="con_box">
+      <div class="dandan_liaotian">
+        <!-- <img src="user_img/dandan.jpg" alt="蛋蛋聊天界面"/> -->
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mid_mid">
+</div>
+<div id="mid_foot">
+  <div id="mid_say">
+    <!-- <textarea name="" cols="" rows="" id="texterea"></textarea> -->
+   <form id="uploadbanner" enctype="multipart/form-data" method="post" action="">
+   <input id="fileupload" name="myfile" type="file" />
+   <input type="submit" value="upload" id="file_but"/>
+</form>
+  </div>
+  <div id="mid_sand">
+    send
+  </div>
+  <div class="blank">
+  </div>
+</div>
+<div class="mid_box">
+</div>
+</div>
+</div>
+</body>
+</html>

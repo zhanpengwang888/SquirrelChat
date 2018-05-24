@@ -1,0 +1,417 @@
+* {
+	margin: 0;
+	padding: 0
+}
+
+body {
+	background: #ccc
+}
+
+li {
+	list-style: none
+}
+
+#top {
+	height: 82px;
+	background: url(../images/bgSelf.gif)
+}
+
+/* not change any left part*/
+#left {
+	float: left;
+	width: 188px;
+	background: url(../images/left_top.gif) no-repeat
+}
+
+.box {
+	overflow: auto;
+	margin-top: 15px;
+	height: 350px;
+	background: url(../images/left_mid.gif) repeat-y
+}
+
+.box_f {
+	height: 33px;
+	background: url(../images/left_foot.gif) 0 -4px no-repeat
+}
+
+.h3 {
+	margin-left: 10px;
+	padding: 2px 15px;
+	background: url(../images/icons.gif) 0 -110px no-repeat;
+	color: #444;
+	font-weight: 400;
+	font-size: 14px;
+	cursor: pointer
+}
+
+.click_h3 {
+	background: url(../images/icons.gif) 0 -123.5px no-repeat;
+}
+
+.ul {
+	display: none;
+	margin-left: 10px;
+	width: 150px
+}
+
+.ul li {
+	display: block;
+	margin-top: 3px;
+	padding: 3px 0 3px 35px;
+	background: url(../images/li.gif) 20px center no-repeat;
+	font-size: 9pt;
+	cursor: pointer
+}
+
+.ul .hover {
+	background: url(../images/li.gif) 20px center no-repeat #effaff;
+}
+
+/*left panel ends */
+
+#right {
+	float: right;
+	width: 168px;
+	height: 25pc;
+	background: url(../images/right_top.gif) right top no-repeat
+}
+
+.right_box {
+	margin-top: 13px;
+	height: 351px;
+	background: url(../images/right_mid.gif) right repeat-y
+}
+
+.right_box_foot {
+	height: 34px;
+	background: url(../images/right_foot.gif) no-repeat
+}
+
+.ctrl_but {
+	position:absolute;
+	top:15%;
+	left:10%;
+	font-size: 14px;  
+    font-family: "Times New Roman";  
+  
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: white;  
+    background-color: #3BD9FF;  
+    border-radius: 6px;  
+    border: 0;  
+  
+    float: left; 
+}
+
+.ctrl_but #ban #admin: hover {
+	background-color: #8B0000;
+    color: black;
+    font-weight: bold;
+}
+#block {
+	position:absolute;
+	top:40%;
+	left:10%;
+	font-size: 14px;  
+    font-family: "Times New Roman";  
+  
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: white;  
+    background-color: #3BD9FF;  
+    border-radius: 6px;  
+    border: 0;  
+  
+    float: left; 
+}
+
+#unblock {
+	position:absolute;
+	top:80%;
+	left:10%;
+	font-size: 14px;  
+    font-family: "Times New Roman";  
+  
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: white;  
+    background-color: #3BD9FF;  
+    border-radius: 6px;  
+    border: 0;  
+  
+    float: left; 
+}
+
+#ban {
+	position:absolute;
+	top:40%;
+	left:10%;
+	font-size: 14px;  
+    font-family: "Times New Roman";  
+  
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: white;  
+    background-color: #3BD9FF;  
+    border-radius: 6px;  
+    border: 0;  
+  
+    float: left; 
+}
+#unban {
+	position:absolute;
+	top:60%;
+	left:10%;
+	font-size: 14px;  
+    font-family: "Times New Roman";  
+  
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: white;  
+    background-color: #3BD9FF;  
+    border-radius: 6px;  
+    border: 0;  
+  
+    float: left; 
+}
+/*
+#ban: hover {
+	background-color: #8B0000;
+    color: black;
+    font-weight: bold;
+}
+*/
+
+#set_admin {
+	position:absolute;
+	top:80%;
+	left:10%;
+	font-size: 14px;  
+    font-family: "Times New Roman";  
+  
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: white;  
+    background-color: #3BD9FF;  
+    border-radius: 6px;  
+    border: 0;  
+  
+    float: left; 
+}
+
+/*change the size of admin icon*/
+#right_foot img {
+	width:50px;
+	height: 50px;
+}
+
+#leave {
+	position:absolute;
+	bottom: 6%;
+	right:10%;
+	font-size: 14px;  
+    font-family: "Times New Roman";  
+  
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: white;  
+    background-color: #3BD9FF;  
+    border-radius: 6px;  
+    border: 0;  
+  
+    float: right; 
+}
+/*
+#admin: hover {
+	background-color: #8B0000;
+    color: black;
+    font-weight: bold;
+}
+*/
+/*right panel ends */
+
+
+#mid {
+	margin: 0 168px 0 188px;
+	background: url(../images/body_top.gif) left top repeat-x #fff
+}
+
+#mid_top {
+	position: absolute;
+	top: 61px;
+	left: 200px;
+	height: 20px
+}
+
+.list {
+	float: left;
+	margin-left: 5px;
+	background: #ccc;
+	cursor: pointer
+}
+
+#mid_con {
+	overflow: auto;
+	padding-top: 20px;
+	height: 250px
+}
+
+#mid_mid {
+	float: left;
+	width: 100%;
+	height: 30px;
+	background: #ccc
+}
+
+#mid_say {
+	overflow:auto;
+	float: left;
+	width: 300px;
+	display: inline;
+	height: 88px;
+	background: #fff;
+	border:0;
+}
+
+/* upload file part */
+#uploadbanner {
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+#fileupload {
+	position:absolute;
+	top:10%;
+	left:10%;
+}
+
+#file_but {
+	position:absolute;
+	bottom:10%;
+	left:10%;
+	font-size: 14px;  
+    font-family: "Times New Roman";  
+  	
+    width: 120px;  
+    height: 28px;  
+    line-height: 28px;  
+    text-align: center;  
+  
+    color: white;  
+    background-color: #3BD9FF;  
+    border-radius: 6px;  
+    border: 0;  
+}
+
+#mid_say textarea {
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	width: 300px;
+	height: 5pc;
+	border: 0
+}
+
+#mid_say .textarea2 {
+	border: 2px solid #6ff
+}
+
+#mid_sand {
+	/* position:relative; */
+	float: right;
+	display: inline;
+	overflow: hidden;
+	margin-top: 40px;
+	margin-right: 10px;
+	width: 93px;
+	height: 35px;
+	/*background: url(ok.gif);*/
+	text-align: center;
+	text-indent: -9999px;
+	font-size: 36px;
+	cursor: pointer;
+}
+
+#mid_foot {
+	position:relative;
+	height: 118px
+}
+
+.mid_box {
+	float: left;
+	width: 100%;
+	height: 30px;
+	background: url(../images/body_foot.gif) left repeat-x
+}
+
+.my_show {
+	overflow: auto;
+	padding: 20px 5px;
+	padding-top: 0
+}
+
+.my_say_con p {
+	padding: 5px 10px
+}
+
+#right_foot,#right_mid,#right_top {
+	position: relative;
+	float: left;
+	overflow: auto;
+	padding: 20px;
+	padding-right: 0;
+	width: 130px;
+	text-align: center
+}
+
+.td_user {
+	padding-right: 5px;
+	padding-left: 20px;
+	height: 21px;
+	background: url(../images/user_title.gif) left no-repeat;
+	font-size: 9pt
+}
+
+.td_hide {
+	overflow: hidden;
+	padding: 0 5px;
+	width: 14px;
+	background: url(../images/user_title.gif) right no-repeat;
+	text-indent: -9999px
+}
+
+.td_user_click {
+	background: url(../images/user_title_click.gif) left no-repeat
+}
+
+.td_hide_click {
+	background: url(../images/user_title_click.gif) right no-repeat
+}
+
+.blank {
+	clear: both
+}
